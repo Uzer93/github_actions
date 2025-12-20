@@ -1,11 +1,14 @@
 name: Control Push
+
 on: push
+
 jobs:
   qa:
     name: Check tests
     runs-on: ubuntu-20.04
+
     steps:
-      - name: Checkout on master
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Python
